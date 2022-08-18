@@ -68,9 +68,16 @@ public class PremierLeagueController {
 	}
 	
 	// DELETE REQUESTS - DELETE
-	@DeleteMapping("/delete/{id}") //localhost:8080/delete/id
-	public ResponseEntity<?> delete(@PathVariable long id) {
-		return (service.delete(id))? new ResponseEntity<>(HttpStatus.NO_CONTENT) : 
-			new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+//	@DeleteMapping("/delete/{id}") //localhost:8080/delete/id
+//	public ResponseEntity<?> delete(@PathVariable long id) {
+//		return (service.delete(id))? new ResponseEntity<>(HttpStatus.NO_CONTENT) : 
+//			new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+//	}
+	
+	// DELETE REQUESTS - DELETE
+	@DeleteMapping("/delete/{id}")
+	public ResponseEntity<Boolean> delete(@PathVariable("id") long id) {
+		return new ResponseEntity<Boolean>(service.delete(id), HttpStatus.NO_CONTENT);
+
 	}
 }

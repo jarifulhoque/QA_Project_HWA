@@ -10,6 +10,7 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
@@ -20,15 +21,16 @@ import com.qa.main.services.PremierLeagueService;
 @SpringBootTest
 public class PremierLeagueServiceUnitTest {
 
+	@Autowired
 	private PremierLeagueService service;
 	
 	@MockBean
 	private PremierLeagueRepo repo;
 	
 	@Test
-	public void testCreate() {
+	public void create() {
 		
-		PremierLeague entry = new PremierLeague("Everton", 40, 200, 56);
+		PremierLeague entry = new PremierLeague(2L, "Everton", 40, 200, 56); // 2L added
 		
 		PremierLeague result = new PremierLeague(2L, "Everton", 40, 200, 56);
 		

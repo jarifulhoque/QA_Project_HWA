@@ -19,8 +19,8 @@ public class PremierLeagueService {
 	
 	// POST REQUESTS - CREATE
 
-	public PremierLeague create(PremierLeague club) {
-		return repo.saveAndFlush(club);
+	public PremierLeague create(PremierLeague entry) {
+		return repo.saveAndFlush(entry);
 	}
 	
 	// GET REQUESTS - READ
