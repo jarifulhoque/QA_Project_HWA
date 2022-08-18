@@ -55,36 +55,39 @@ STEP 03:
  - Type "localhost8080" in URL
  - You should now have access to the Front end of this web app
 
+### Example Build
+
+After executing the jar file:
+
+![Install](https://user-images.githubusercontent.com/107991329/185508523-7837186a-c7c5-4589-849b-869b3970fe2a.png)
+
+After opening localhost8080:
+
+![Webpage_localhost](https://user-images.githubusercontent.com/107991329/185508577-52d5e06e-91ca-460d-9e49-3281fde4190b.png)
+
+
 ## Running the tests
 
-Explain how to run the automated tests for this system. Break down into which tests and what they do
+To run your own tests, you would need to open the project inside an IDE, such as eclipse or spring tool suite, and run the src/test/java package as a JUNIT Test, or select individual unit tests.
+The overall coverage should be seen as 89.1%:
+
+![Coverage](https://user-images.githubusercontent.com/107991329/185509134-1689e1d9-a1ce-4eb0-a01c-c3c7a739f4c7.png)
+
 
 ### Unit Tests 
 
-Explain what these tests test, why and how to run them
+Unit testing is a testing approach that uses conditions to test smaller isolated portions of code that may be utilised logically.
+Unit testing was used in this project on the controllers and services classes, an example of which will be displayed here:
 
-```
-Give an example
-```
+![UnitTest](https://user-images.githubusercontent.com/107991329/185509726-2b1b72bf-0f52-40d8-bbb3-69cb60f240ab.png)
+
 
 ### Integration Tests 
-Explain what these tests test, why and how to run them
 
-```
-Give an example
-```
+Integration testing is the process of evaluating various coupled components of an application to check if they logically operate together and achieve the desired result. Integration testing was used for the controller class as shown below:
 
-### And coding style tests
+![IntegrationTest](https://user-images.githubusercontent.com/107991329/185510082-24484539-4685-4d02-a099-e6df1d000fe5.png)
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -92,11 +95,11 @@ Add additional notes about how to deploy this on a live system
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning.
+We use GitHub for versioning.
 
 ## Authors
 
-* **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
+* **Jariful Hoque** - *Initial work* - [jarifulhoque](https://github.com/jarifulhoque)
 
 ## License
 
@@ -106,6 +109,7 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Trainer - Anoush Lowton
+Trainer - Jordan BenBelaid
+Trainer - Edward Reynolds
+Trainer - Piers Barber
