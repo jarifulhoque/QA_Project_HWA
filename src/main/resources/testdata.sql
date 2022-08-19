@@ -1,0 +1,1 @@
+INSERT INTO `premier_league`(`club`, `stadium_capacity`, `club_value`, `points`) VALUES ('Liverpool', 60, 300, 97);

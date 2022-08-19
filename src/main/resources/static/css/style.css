@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+}
+body {
+    background-image:linear-gradient(#f8f9fa, #551c82);
+    background-repeat: no-repeat;
+}
+
+#clubInput{
+    background-color: beige;
+}
+#stadiumCapacityInput{
+    background-color: beige;
+}
+#clubValueInput{
+    background-color: beige;
+}
+#pointsInput{
+    background-color: beige;
+}
+#idInput{
+    background-color: beige;
+}
+
+#form-div {
+    border: 2px solid black;
+    display: inline-grid;
+    width: 25%;
+    margin-left: 2%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#results-div {
+    border: 2px solid black;
+    display: inline-grid;
+    width: 60%;
+    margin-left: 2%;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.entry-div {
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top:4px;
+    width:50%;
+    text-align:center;
+    background-color: beige;
+}
